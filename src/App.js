@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Card  from './component/Card';
 import Data from './component/Data.js';
