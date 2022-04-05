@@ -17,7 +17,7 @@ const pulangFredy = () =>{
   return (
     <div className="App">
       <header className="App-header">
-        
+        <h1>Haaaayy</h1>  
        <Card name={name} />
 
        <button onClick={sapaFredy}>Sapa Fredy</button>&nbsp;
