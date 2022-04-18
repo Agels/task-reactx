@@ -11,7 +11,7 @@ export default class Success extends React.Component {
       Full name : {this.props.name}
       </p>
       <p>
-        email : {this.props.email}
+      Email : {this.props.email}
       </p>
       <hr />
 
