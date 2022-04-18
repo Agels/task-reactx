@@ -8,7 +8,7 @@ export default class Success extends React.Component {
       <Alert variant="success">
       <Alert.Heading>Hey, Registration Success</Alert.Heading>
       <p>
-      Full name : {this.props.name}
+      Fullname : {this.props.name}
       </p>
       <p>
       Email : {this.props.email}
