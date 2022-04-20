@@ -132,8 +132,10 @@ export default class App extends React.Component {
                     <Form.Check
                       type="checkbox"
                       label="Check"
+                      name="agree"
+                      checked={this.state.agree}
                       onChange={(e) =>
-                        this.setState({ agree: e.target.checked })
+                        this.setState({ agree: e.target.checked },() => console.log(this.state))
                       }
                     ></Form.Check>
                   </Form.Group>
