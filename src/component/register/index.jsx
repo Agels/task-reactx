@@ -52,12 +52,13 @@ export default class App extends React.Component {
 
       setTimeout(() => {
         this.setState({success:false})
-      }, 6000)
+      }, 4000)
       alert(`${this.state.fullname}
         ${this.state.email}
         ${this.state.password}`);
-
+      
         setTimeout(() => {
+          
           this.setState({
             fullname: "",
             email: "",
@@ -65,9 +66,8 @@ export default class App extends React.Component {
             agree: false,
             error: [],
           });
-        }, 5000)
-      
-      el.target.reset();
+        }, 3000);
+
    
     }
   };
@@ -85,11 +85,13 @@ export default class App extends React.Component {
                   {this.state.error.map((val, i) => {
                     return <Error key={i} error={val} show={true} />;
                   })}
+                  {console.log(this.state)}
                   <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Input
                       label="fullname"
                       typex="text"
                       namex="fullname"
+                       defaultValue={this.state.fullname}
                       onChangex={(val) =>
                         this.setState({ fullname: val }, () =>
                           console.log(this.state)
@@ -105,6 +107,7 @@ export default class App extends React.Component {
                       label="email"
                       typex="text"
                       namex="email"
+                       defaultValue={this.state.email}
                       onChangex={(val) =>
                         this.setState({ email: val }, () =>
                           console.log(this.state)
@@ -119,6 +122,7 @@ export default class App extends React.Component {
                       label="password"
                       typex="text"
                       namex="password"
+                      defaultValue={this.state.password}
                       onChangex={(val) =>
                         this.setState({ password: val }, () =>
                           console.log(this.state)

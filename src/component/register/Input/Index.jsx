@@ -10,7 +10,7 @@ export default class Input extends React.Component {
           type={this.props.typex}
           onChange={(e) => this.props.onChangex(e.target.value)}
           placeholder={this.props.placeholder}
-          defaultValue={this.props.val}
+          value={this.props.defaultValue}
         />
       </div>
     );
